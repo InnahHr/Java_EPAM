@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class exercise2 {
+
+    public static void main(String[] args) {
+        System.out.println("Find the value of the function ");
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the number a= " );
+        double a = in.nextDouble();
+        System.out.print("Enter the number b= " );
+        double b= in.nextDouble();
+        System.out.print("Enter the number c= " );
+        double c= in.nextDouble();
+        double result, d, e, f;
+        d=b*b+4*a*c;
+        e=Math.sqrt(d);
+        f=Math.pow(b,-2);
+        result=((b+e)/(2*a)+(b+e)%(2*a))-a*a*a*c+f;
+        System.out.print("Result=" + result);
+        in.close();
+	
+    }
+}
