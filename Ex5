@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class exercise5 {
+
+    public static void main(String[] args) {
+        int t;
+        Scanner in = new Scanner(System.in);
+            System.out.println("Enter the elapsed time per second");
+            t = in.nextInt();
+            int min = 0;
+            int hours = 0;
+            while ( t >= 60 ) {
+                t = t - 60;
+                  min = min + 1;
+                    while (min >= 60) {
+                        min = min - 60;
+                        hours = hours + 1;
+                }
+            }
+            System.out.println("You result is " + hours + " Ч "+ min + " М " + t + " C");
+                in.close();
+            }
+    }
