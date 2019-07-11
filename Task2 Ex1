@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class exercise2_1 {
+
+    public static void main  (String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println ("Please enter angle A value");
+        int a = in.nextInt();
+        System.out.println ("Please enter angle B value");
+        int b = in.nextInt();
+        int z;
+        z = a+b;
+        if( (a == 90) || (b == 90) || (z == 90)) {
+            System.out.println ("One of the angles of the triangle is 90 degrees");
+        } else if ( (a > 0) & (a<180) &(b > 0) & (b <180) & (z < 180)) {
+            System.out.println("This is a triangle");
+        }
+        else {
+            System.out.println("This isn't a triangle");
+        }
+
+    }
+}
